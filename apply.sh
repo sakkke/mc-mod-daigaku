@@ -2,6 +2,8 @@
 
 set -euo pipefail
 
+shopt -s globstar
+
 cd "$(dirname "$0")"
 
 env_sh_default=.env.sh.default
