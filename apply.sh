@@ -17,5 +17,6 @@ fi
 for mo in **/*.mo; do
 	target="${mo#templates/}"
 	target="${target%.mo}"
+	mkdir -p "$(dirname "$target")"
 	mo < "$mo" | pv -N "$target" > "$target"
 done
