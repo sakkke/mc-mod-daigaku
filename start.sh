@@ -1,2 +1,2 @@
 #!/bin/sh
-java -Xms2G -Xmx2G -jar paper.jar --nogui
+java -jar -Xmx4G mohist.jar
